@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Michael Mas" />
+        <link rel="icon" href="./favicons/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Casse-briques</title>
+    </head>
+
+
+
+    <nav class="navbar">
+        <a href="lienlogo" class="navbar-brand ">
+          <img src="images/logo chat blanc.png" height="100%" width="10%"" alt="Site logo"></a>
+          <div class="navbar-nav">
+            <button id="close-btn" class="btn nav-item">Qui suis-je ?</button>
+          <button id="close-btn" class="btn nav-item">D'autres projets</button>
+          </div>
+            </nav>
+
+
+
+    <body>
+        <section class="game" id="game">
+            <video id="bgvid" playsinline autoplay muted loop>
+              <source src="images/back.mp4" type="video/mp4">
+              </video>
+              
+              <div class="row">
+                  <div class="col">
+                      <div id="logo"></div>
+                      <div class="menu">
+                          <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+                    </div>
+            <div id="rules" class="rules">
+                <h2>Règles du jeu</h2>
+                <p>Jouez avec les flèches ou le clavier </p>
+                   <p> Musique: M </p>
+                    <p>SFX (bruits): S</p>
+                <p>Volume: ↑ ↓</p>
+                <p>Commencer: Espace</p>
+            </div>
+            <button id="close-btn" class="btn close-btn">Quitter</button>
+        </div>
+        
+            <canvas id="breakout" width="750" height="550"></canvas>
+           
+            
+        </section>
+    </div>
+        <script src="breakout.js"></script>
+<!-- Script Icone -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    </body>
+
+</html>

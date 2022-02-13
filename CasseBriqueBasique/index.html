@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Casse-briques</title>
+    </head>
+
+    <body>
+        <section class="game" id="game">
+            <video id="bgvid" playsinline autoplay muted loop>
+              <source src="img/back.mp4" type="video/mp4">
+              </video>
+            <button id="rules-btn" class="btn rules-btn">Règles du jeu</button>
+            <div id="rules" class="rules">
+                <h2>Règles du jeu</h2>
+                <p>Utilisez les touches gauche ◄ et droite ► du clavier pour diriger la barre <br>
+                    La balle doit rebondir sur la barre pour rentrer dans les briques et les briser. </p>
+                <p>Si elle tombe en dessous de la barre, vous perdez une vie. Le jeu s'arrete dès que vous n'avez plus de vie.</p>
+                <button id="close-btn" class="btn close-btn">Quitter</button>
+            </div>
+            
+            <div class="sound-container">
+                <img src="img/sound_on.png" alt="Sound Image" id="sound">
+            </div>
+            
+            <div id="game-over">
+                <img src="img/you-won.png" alt="" id="you-won">
+                <img src="img/game-over.png" alt="" id="you-lose">
+                <div id="restart">Rejouer</div>
+            </div>
+
+            <canvas id="canvas" width="750" height="550"></canvas>
+        </section>
+    
+        <script src="components.js"></script>
+        <script src="game.js"></script>
+    </body>
+
+</html>
