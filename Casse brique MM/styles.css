@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+* {
+  font-family: 'Short Stack', cursive;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.row{
+
+  display:flex;
+  flex-direction: row;
+}
+
+.col{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.controls > p {
+  font-family: 'Press Start 2P';
+}
+
+#breakout {
+  background-color: rgb(0, 0, 0);
+  cursor: none;
+}
+
+#play-button {
+  background-color: rgb(45, 0, 128);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: gruppo, sans-serif;
+}
+
+.game {
+ 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+ 
+}
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%); }
+
+
+
+#restart {
+  color: #fff;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1.5;
+  border: 1px solid #6198d8;
+  border-radius: 4px;
+  text-align: center;
+  transition: .1s ease-in-out;
+}
+
+#restart:hover {
+  background-color: #6198d8;
+}
+
+
+canvas {
+  display: block;
+  border-radius: 4px;
+  background-size: 100% 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgba(42, 42, 50, 0.938);
+  border: rgb(145, 141, 190) 1px solid;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: gruppo, sans-serif;
+  transition: background-color .1s ease-in;
+}
+
+.btn:hover {
+  background-color: #556577;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.rules {
+  
+  background-color: #0f2742cc;
+  color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  margin-right: 40%;
+  margin-left: -8% ;
+  margin-top: 25%;
+
+}
+
+.rules.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rules p {
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+
+
+.navbar{
+
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000000dc;
+}
+
+.navbar-nav{
+
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 40%;
+}
+
+.nav-item{
+
+  margin-right: 10%;
+}
+
+
+
+
