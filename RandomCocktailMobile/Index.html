@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cocktail</title>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/dark-onsen-css-components.min.css">
+    <link rel="stylesheet" href="cocktails.css">
+ 
+</head>
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Cocktails</div>
+        </ons-toolbar>
+        
+        <ons-tabbar swipeable position="auto">
+            <ons-tab page="home.html" label="Cocktails" icon="fa-cocktail" active>
+            </ons-tab>
+            <ons-tab page="about.html" label="A propos" icon="fa-share" >
+            </ons-tab>
+
+        </ons-tabbar>
+    </ons-page>
+
+    <template id="home.html">
+        <ons-page id="home">
+            <ons-pull-hook id="pull-hook">
+              Monte pour rafraichir
+            </ons-pull-hook>
+            <h1>Cocktail aléatoire</h1>
+            <hr>
+            <section id="drink-section"></section>
+        </ons-page>
+    </template>
+
+    <template id="about.html">
+        <ons-page id="about">
+            <h1>A propos</h1>
+        </ons-page>
+    </template>
+
+     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="cocktails.js"></script>
+</body>
+</html>
