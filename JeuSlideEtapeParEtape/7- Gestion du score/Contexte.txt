@@ -1,0 +1,10 @@
+********************  Gestion du score  *******************
+
+
+
+
+1) Mise en place d'une fonction qui fait disparaitre les enemies et ses conditions.
+
+2) Création de l'Objet score qui commencera à 0 et mise en place du texte qui lui sera relié.
+
+3 La fonction de disparition enemies affectera le score en l'incrémentant de 1 à chaque disparition.

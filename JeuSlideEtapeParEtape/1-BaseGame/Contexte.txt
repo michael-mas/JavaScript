@@ -1,0 +1,9 @@
+**** Création Base Canvas & Test COntrole KeyBoard *****
+
+1) Creation fichier HTML/CSS et JS et mise en place asset img dans html
+
+2) Mise en forme du canvas et élements DOM avec css
+
+3) Création fonctions, classes et constantes du jeu
+
+4) Test avec la méthode Keyboard, dans la console,  pour préparer le controle du joueur

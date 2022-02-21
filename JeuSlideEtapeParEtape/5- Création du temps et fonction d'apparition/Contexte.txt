@@ -1,0 +1,8 @@
+***************** Temps et apparition   *********
+
+
+1) Mise en place de la fonction qui fait apparaitre les enemies
+
+2) Création d'une fonction temps pour gerer les apparation des enemies. et parametrage de la fonction.
+
+3) Utilisation de la méthode random pour gerer les interval d'aparition et creation de la valeur vitesse pour enemy1.
