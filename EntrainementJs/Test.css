@@ -1,0 +1,62 @@
+body{
+
+width: 100%;
+height: 100%;
+background-color: blue;
+text-align: center;
+}
+
+.boite{
+
+    display: flex;
+    justify-content: center;
+}
+
+#bouton{
+
+background-color: brown;
+}
+
+.compteur{
+
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.choix{
+
+    border: black 2px solid;
+    text-align: center;
+    height: 100%;
+    margin-top: 20px;
+    background-color: brown;
+}
+
+.choix{
+
+    display: none
+}
+
+.img{
+
+    border: black solid 1px;
+    background-color: black;
+    
+}
+
+#maDIV{
+border: solid 2px black;
+width: 50%;
+align-self: center;
+
+}
+
+#box1{
+    display: flex;
+    flex-direction: column;
+}
+
+#btx{
+    width: 20%;
+    align-self: center;
+}
