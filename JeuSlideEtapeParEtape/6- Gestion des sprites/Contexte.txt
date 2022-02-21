@@ -1,9 +1,0 @@
-*************** Gestion Sprites  ********************
-
-
-
-1) Mise en place boucle de l'animation des sprites pour les enemies.
-
-2) Correction des transitions des sprites en limitant les sprites selectionné.
-
-3) Idem pour le joueur et correction supplémentaire pour le saut au niveau des sprites.

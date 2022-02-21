@@ -1,7 +1,0 @@
-************ Contrôle joueur *********
-
-1) Affecter les contrôles de mouvement horizontal, avec les éléments du tableau "Keys", au joueur, mettre
-les frontières du jeu et créer valeur vitesse du joueur.
-
-2)Créer une forme de gravité avec la création de valeur "velocité", "poid" et ainsi gérer les mouvement verticales.
-Mettre aussi en place des conditions pour que le joueur ne fasse pas des sauts suppélementaire.

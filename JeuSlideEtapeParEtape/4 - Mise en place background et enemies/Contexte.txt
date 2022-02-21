@@ -1,8 +1,0 @@
-************  Background et enemies ***************
-
-1) Chargement de l'image de fond et animation de celui-ci dans une boucle via la création de l'objet background.
-
-// Tips: Bien faire attention à l'organisation des appels des fonctions lié au objet, utilisant une image. //
-// C'est un comme un système de couche visibles. //
-
-2) Création de l'objet enemy1 et mise en place de son apparition et sens du mouvement
