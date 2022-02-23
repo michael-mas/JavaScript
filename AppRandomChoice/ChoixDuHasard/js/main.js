@@ -16,7 +16,7 @@ textarea.addEventListener('keyup', (e) => { // On ajoute l'evenement de rentré 
 });
 
 function createTags(input){ // Fonction pour creer un choix
-    const tags = input.split(' ').filter(tag => tag.trim() !== '').map(tag => tag.trim());
+    const tags = input.split('+').filter(tag => tag.trim() !== '').map(tag => tag.trim());
 // On divise tags en liste => On retire tout les espaces blancs et divisant les chaines de caractere entre les espaces en element texte séparé,
 // avec la methode trim => si tag! n'est pas vide
 // Et enfin on  creeer un nouveau tableau avec la methode map avec les elements séparé
