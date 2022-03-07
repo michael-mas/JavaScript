@@ -1,0 +1,318 @@
+
+
+.codepen-wrapper1 {
+   
+    height: 70vh;
+    width: 50%;
+    margin-left: 50%;
+    display: none;
+    
+}
+
+.codepen-wrapper2 {
+   
+    height: 70vh;
+    width: 50%;
+    margin-left: 50%;
+    display: none;
+    
+}
+
+.codepen-wrapper3 {
+   
+    height: 70vh;
+    width: 50%;
+    margin-left: 50%;
+    display: none;
+    
+}
+
+.codepen-wrapper4 {
+   
+    height: 70vh;
+    width: 50%;
+    margin-left: 50%;
+    display: none;
+    
+}
+
+.codepen-wrapper5 {
+   
+    height: 70vh;
+    width: 50%;
+    margin-left: 50%;
+    display: none;
+    
+}
+
+.book {
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+    color: #484e4a;
+}
+.page {
+    width: 100%;
+    height: 100%;
+    perspective: 2200px;
+}
+.page__1 {
+    background-image: url(/img/HTMLBook.png);
+    background-size: 100% 100%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s 0.3s;
+    transform-origin: 0 50%;
+    z-index: 2;
+}
+.page__1::after {
+    content: url(/img/Compétences.png);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    color: #eff0eb;
+    position: absolute;
+    background-color: #424b54;
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: all 0.3s 0.5s;
+}
+
+
+.page__2 {
+    background-color: #baa898;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.page:hover .page__1 {
+    transform: rotateY(-180deg);
+    box-shadow: 2.5rem 3rem 405rem rgba(0, 0, 0, .25);
+}
+.page:hover .page__1::after {
+    opacity: 1;
+}
+
+
+
+
+
+.page2__1 {
+    background-image: url(/img/JsBook.png);
+    background-size: 100% 100%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s 0.3s;
+    transform-origin: 0 50%;
+    z-index: 2;
+}
+.page2__1::after {
+    content: url(/img/CompétencesJs.png);
+    color: #eff0eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #424b54;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: all 0.3s 0.5s;
+}
+.page2__2 {
+    background-color: #baa898;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+}
+.page:hover .page2__1 {
+    transform: rotateY(-180deg);
+    box-shadow: 2.5rem 3rem 405rem rgba(0, 0, 0, .25);
+}
+.page:hover .page2__1::after {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.page3__1 {
+    background-image: url(/img/PhpBook.png);
+    background-size: 100% 100%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s 0.3s;
+    transform-origin: 0 50%;
+    z-index: 2;
+}
+.page3__1::after {
+    content: url(/img/CompétencesPhp.png);
+    color: #eff0eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #424b54;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: all 0.3s 0.5s;
+}
+.page3__2 {
+    background-color: #baa89800;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: background-color 2s, transform 2s;
+
+}
+.page:hover .page3__1 {
+    transform: rotateY(-180deg);
+    box-shadow: 2.5rem 3rem 405rem rgba(0, 0, 0, .25);
+}
+.page:hover .page3__1::after {
+    opacity: 1;
+}
+
+.page:hover .page3__2{
+    background-color: #baa898;
+}
+
+
+
+.page4__1 {
+    background-image: url(/img/PythonLogo.png);
+    background-size: 100% 100%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s 0.3s;
+    transform-origin: 0 50%;
+    z-index: 2;
+}
+.page4__1::after {
+    content: url(/img/CompétencesPython.png);
+    color: #eff0eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #424b54;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: all 0.3s 0.5s;
+}
+.page4__2 {
+    background-color: #baa898;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.page:hover .page4__1 {
+    transform: rotateY(-180deg);
+    box-shadow: 2.5rem 3rem 405rem rgba(0, 0, 0, .25);
+}
+.page:hover .page4__1::after {
+    opacity: 1;
+}
+
+.page5__1 {
+    background-image: url(/img/PaoLogo.png);
+    background-size: 100% 100%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s 0.3s;
+    transform-origin: 0 50%;
+    z-index: 2;
+}
+.page5__1::after {
+    content: url(/img/CompétencesPAO.png);
+    color: #eff0eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #424b54;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: all 0.3s 0.5s;
+}
+.page5__2 {
+    background-color: #baa898;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.page:hover .page5__1 {
+    transform: rotateY(-180deg);
+    box-shadow: 2.5rem 3rem 405rem rgba(0, 0, 0, .25);
+}
+.page:hover .page5__1::after {
+    opacity: 1;
+}

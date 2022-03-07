@@ -1,0 +1,298 @@
+html { 
+    scroll-behavior: smooth; /*active le mode smooth pour le scroll */
+  }
+
+
+  *, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* La propriété CSS box-sizing définit la façon dont la hauteur et la largeur totale d'un élément est calculée */
+    transition: 1s; /*transition est une propriété raccourcie pour les propriétés*/
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: none;
+    text-align: center;
+    overflow-x: hidden; 
+  }
+
+
+  body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(126, 126, 126); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid rgb(247, 243, 236); /* creates padding around scroll thumb */
+  }
+  
+  #cursor {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 18;
+    text-align: center;
+    border-radius: 70%;
+    border: 1px solid #000000;
+    position: fixed;
+    cursor: none;
+    background-color: #fa090931;
+    width: 40px;
+    height: 40px;
+    border: 1px dashed rgb(0, 0, 0);
+    border-radius: 50%;
+    animation: Anim1 1s infinite alternate;
+  pointer-events: none;
+    
+    
+  }
+
+  #pointer{
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+    border: 1px dashed rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+
+  .cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: crimson;
+    border-radius: 50%;
+}
+
+.expand {
+    animation: Anim2 .5s;
+    background: crimson;
+    border: 1px solid crimson;
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(190deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+  
+  #navbar{
+
+    z-index: 13;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #6e7270;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+#RepairBtn{
+  visibility:hidden;
+  position: absolute;
+  width: 15%;
+  height: 20%;
+  top: 10%;
+  right: 5%;
+ 
+}
+
+#MagicBtn{
+  height: 5%;
+  position: absolute;
+  right: 3%;
+  top: 760px;
+  background-color: red;
+  padding: 1%;
+  color: white;}
+  
+  #MagicBtn:hover{
+    background-color: rgb(10, 0, 0);
+  }
+
+
+
+.separateur{
+  background-color: #5f1313d8;
+  height: 2px;
+}
+
+#creditBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#crédit{
+  margin-top: 2%;
+  color: white;
+  background-color: #0000009c;
+  width: 60%;
+}
+
+.comp{
+  list-style-type:none;
+  visibility: hidden;
+}
+
+
+
+#contact{
+  background-image: url(/img/ContactBack.jpg);
+  background-size: 100% 100%;
+  height: 23.5vh;
+  width: 100%;
+}
+
+#myBtn{
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fa{
+  font-size: 50px;
+  color: #ffffff;
+}
+
+
+
+
+.fa:hover {
+  color: red;
+}
+
+
+.fa-github{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+#boitBtn{
+  position: absolute;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+  width: 30%;
+  background-color: #000000a9;
+  border: #ffffffd2 solid 2px;
+  
+}
+
+#backC{
+  background-image: url(/img/backComp.jpg);
+ width: 100%;
+ height: 100%;
+}
+
+
+.btnx{
+  border-radius: 300px;
+  padding: 5%;
+  background-color: #1a1825ab;
+  color: white;
+}
+
+.btnx:hover{
+  background-color: #3821b9ab;
+  color: rgb(238, 129, 129);
+}
+
+#backto{
+  position: absolute;
+  width: 100%;
+  height: 83%;
+ left: 0;
+}
